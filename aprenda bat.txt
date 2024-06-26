@@ -1,0 +1,46 @@
+Comandos:
+ECHO: Escreve na tela
+ECHO OFF: Oculta informações e o código executado pelo sistema.
+ECHO ON: Exibe informações e o código executado pelo sistema.
+ECHO.: Salta uma linha.
+@ECHO: Faz com que o prompt fique oculto durante toda execução.
+SET: Cria variável que pode ser referenciada através de %variável%.
+CLS: Limpa o console.
+IF e ELSE: Estruturas condicionais.
+GOTO: Avança até determinado trecho do lote.
+FOR: Estrutura de repetição.
+PAUSE: Faz uma pausa, e exibe: “Pressione qualquer tecla para continuar.”
+REM: Utilizado para fazer comentários.
+START: Inicializa um aplicativo ou programa.
+MOVE: Move (recorta) um arquivo de um diretório para outro.
+
+
+
+
+############
+
+echo off
+cls
+echo “SCRIPT .BAT para realizar backup”
+pause
+cd\docume~1\%username%\documentos
+copy| * d:\Arquivos_Backup
+pause
+echo “Abrir calculadora”
+start calc.exe
+pause
+
+############
+
+Listagem 1: Exemplo de arquivo.bat
+
+Explicando o código:
+
+ECHO OFF: Oculta o código executado.
+CLS: Limpa a tela do console.
+ECHO: Exibe o texto “SCRIPT .BAT para Realizar Backup”.
+PAUSE: Pausa execução e apresenta: “Pressione qualquer tecla para continuar”.
+cd\docume~1\%username%\documentos: Acessa o diretório onde será realizado backup.
+copy* d:\ Arquivos_Backup: Copia todos(*) os arquivos do diretório documentos para o diretório Arquivos_Backup na partição d:.
+ECHO: Exibe o texto ”Abrir Calculadora“.
+start calc.exe: Inicia a calculadora.
